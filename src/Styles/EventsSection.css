@@ -1,0 +1,11 @@
+.events-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}

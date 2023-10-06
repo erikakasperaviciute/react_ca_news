@@ -1,5 +1,6 @@
 import EventItem from "./EventItem";
 import LargeBtn from "./LargeBtn";
+import "../Styles/EventsSection.css";
 
 function EventsSection() {
   return (

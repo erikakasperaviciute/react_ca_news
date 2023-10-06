@@ -1,4 +1,6 @@
+import "../Styles/SecondaryNewsList.css";
 import NewsItem from "./NewsItem";
+
 function SecondaryNewsList() {
   return (
     <div className="secondary-news-list">

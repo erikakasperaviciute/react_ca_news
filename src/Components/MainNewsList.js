@@ -1,5 +1,5 @@
 import NewsItem from "./NewsItem";
-
+import "../Styles/MainNewsList.css";
 function MainNewsList() {
   return (
     <div className="main-news-list">

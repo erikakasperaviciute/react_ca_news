@@ -1,6 +1,7 @@
 import LargeBtn from "./LargeBtn";
 import MainNewsList from "./MainNewsList";
 import SecondaryNewsList from "./SecondaryNewsList";
+import "../Styles/NewsSection.css";
 function NewsSection() {
   return (
     <section className="news-section">

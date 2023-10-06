@@ -1,3 +1,4 @@
+import "../Styles/NewsItem.css";
 function NewsItem(props) {
   return (
     <div className="news-item">

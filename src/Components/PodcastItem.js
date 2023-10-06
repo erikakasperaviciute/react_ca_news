@@ -1,3 +1,4 @@
+import "../Styles/PodcastItem.css";
 function PodcastItem(props) {
   return (
     <div className="podcast-item">

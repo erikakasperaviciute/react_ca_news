@@ -1,5 +1,6 @@
 import podcastImg from "../Images/podcast-image-border-min.jpg";
 import PodcastItem from "./PodcastItem";
+import "../Styles/PodcastSection.css";
 
 function PodcastSection() {
   return (

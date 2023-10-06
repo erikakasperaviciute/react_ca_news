@@ -1,3 +1,4 @@
+import "../Styles/VideoSection.css";
 import LargeBtn from "./LargeBtn";
 function VideoSection() {
   return (

@@ -1,5 +1,6 @@
 import PodcastSection from "./PodcastSection";
 import EventsSection from "./EventsSection";
+import "../Styles/SideBar.css";
 
 function SideBar() {
   return (

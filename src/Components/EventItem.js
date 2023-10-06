@@ -1,3 +1,4 @@
+import "../Styles/EventItem.css";
 function EventItem(props) {
   return (
     <div className="event-item">

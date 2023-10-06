@@ -1,0 +1,21 @@
+.news-item a {
+    text-decoration: none;
+}
+
+.news-item-content {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.news-item-category {
+    color: #1200ff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.news-item-title {
+    margin: 0;
+    font-size: 24px;
+}
