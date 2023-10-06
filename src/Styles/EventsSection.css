@@ -9,3 +9,7 @@
     flex-direction: column;
     row-gap: 60px;
 }
+
+.events-section .section-title {
+    margin-bottom: 30px
+}

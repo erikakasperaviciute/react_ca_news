@@ -1,5 +1,8 @@
 import "../Styles/EventItem.css";
 function EventItem(props) {
+  if (!props.eventTitle || !props.navLink) {
+    return null;
+  }
   return (
     <div className="event-item">
       <a href="props.navLink">
@@ -10,13 +13,17 @@ function EventItem(props) {
         )}
 
         <div className="event-content">
-          <div className="event-date">
-            <span className="event-day">{props.date}</span>
-            <span className="event-month">{props.month}</span>
-          </div>
+          {props.date && props.month && (
+            <div className="event-date">
+              <span className="event-day">{props.date}</span>
+              <span className="event-month">{props.month}</span>
+            </div>
+          )}
 
           <div className="event-info">
-            <span className="event-location">{props.location}</span>
+            {props.location && (
+              <span className="event-location">{props.location}</span>
+            )}
             <h3 className="event-title">{props.eventTitle}</h3>
           </div>
         </div>
