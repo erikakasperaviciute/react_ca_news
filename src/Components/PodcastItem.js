@@ -1,21 +1,22 @@
 import "../Styles/PodcastItem.css";
 function PodcastItem(props) {
-  if (!props.podcastTitle || !props.time || !props.podcastImage) {
+  const { podcastTitle, podcastImage, time, podcastDate } = props;
+
+  if (!podcastTitle || !time || !podcastImage) {
     return null;
   }
+
   return (
     <div className="podcast-item">
       <div className="image-wrapper">
-        <img src={props.podcastImage} alt="" />
+        <img src={podcastImage} alt="" />
       </div>
-      <span className="podcast-length">Trukmė: {props.time}</span>
+      <span className="podcast-length">Trukmė: {time}</span>
       <button className="podcast-play">Play</button>
 
       <div className="podcast-content">
-        <h3 className="podcast-title">{props.podcastTitle}</h3>
-        {props.time && (
-          <span className="podcast-date">{props.podcastDate}</span>
-        )}
+        <h3 className="podcast-title">{podcastTitle}</h3>
+        {time && <span className="podcast-date">{podcastDate}</span>}
       </div>
     </div>
   );
