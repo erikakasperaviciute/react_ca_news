@@ -1,7 +1,13 @@
 import NewsItem from "./NewsItem";
 import "../Styles/MainNewsList.css";
-function MainNewsList(props) {
-  const { mainNewsArr } = props;
+import { useContext } from "react";
+import { MainContext } from "../store/newsPageContext/mainContext";
+
+function MainNewsList() {
+  const ctx = useContext(MainContext);
+
+  const { mainNewsArr } = ctx;
+
   return (
     <div className="main-news-list">
       {mainNewsArr.map((mainNewsItem, index) => (

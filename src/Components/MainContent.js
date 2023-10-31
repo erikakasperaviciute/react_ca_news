@@ -4,10 +4,7 @@ import "../Styles/MainContent.css";
 function MainContent(props) {
   return (
     <main className="main-content">
-      <NewsSection
-        mainNewsArr={props.mainNews}
-        secondNewsArr={props.secondaryNews}
-      />
+      <NewsSection />
       <VideoSection />
     </main>
   );

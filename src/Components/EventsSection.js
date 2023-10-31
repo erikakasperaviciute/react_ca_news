@@ -1,9 +1,12 @@
 import EventItem from "./EventItem";
 import LargeBtn from "./LargeBtn";
 import "../Styles/EventsSection.css";
+import { useContext } from "react";
+import { SideBarContext } from "../store/newsPageContext/sidebarContext";
 
 function EventsSection(props) {
-  const { eventsArr } = props;
+  const ctx = useContext(SideBarContext);
+  const { eventsArr } = ctx;
   return (
     <section className="events-section">
       <h2 className="section-title">Renginiai</h2>

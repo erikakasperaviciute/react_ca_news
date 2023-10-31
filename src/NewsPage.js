@@ -2,6 +2,8 @@ import "./News.css";
 import MainContent from "./Components/MainContent";
 import SideBar from "./Components/SideBar";
 import podcastImg from "./Images/podcast-image-border-min.jpg";
+import { MainContext } from "./store/newsPageContext/mainContext";
+import { SideBarContext } from "./store/newsPageContext/sidebarContext";
 
 const mainNewsArr = [
   {
@@ -128,8 +130,12 @@ function NewsPage() {
   return (
     <div className="container">
       <div className="page-content-wrapper">
-        <MainContent mainNews={mainNewsArr} secondaryNews={secondNewsArr} />
-        <SideBar podcasts={podcastsArr} events={eventsArr} />
+        <MainContext.Provider value={{ mainNewsArr, secondNewsArr }}>
+          <MainContent />
+        </MainContext.Provider>
+        <SideBarContext.Provider value={{ podcastsArr, eventsArr }}>
+          <SideBar />
+        </SideBarContext.Provider>
       </div>
     </div>
   );

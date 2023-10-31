@@ -1,8 +1,13 @@
 import "../Styles/SecondaryNewsList.css";
 import NewsItem from "./NewsItem";
+import { useContext } from "react";
+import { MainContext } from "../store/newsPageContext/mainContext";
 
-function SecondaryNewsList(props) {
-  const { secondNewsArr } = props;
+function SecondaryNewsList() {
+  const ctx = useContext(MainContext);
+
+  const { secondNewsArr } = ctx;
+
   return (
     <div className="secondary-news-list">
       {secondNewsArr.map((secondaryNewsItem, index) => (
